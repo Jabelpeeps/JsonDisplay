@@ -1,0 +1,119 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textIsSelectable="false"
+
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:theme="@style/Widget.AppCompat.Toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:measureWithLargestChild="false"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/top_prompt"
+            style="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_when_pin_set"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:padding="30dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            tools:text="Enter Pin" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/horizontal_linear_layout" >
+
+            <NumberPicker
+                android:id="@+id/pin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"/>
+
+            <NumberPicker
+                android:id="@+id/pin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"/>
+
+            <NumberPicker
+                android:id="@+id/pin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" />
+
+            <NumberPicker
+                android:id="@+id/pin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" />
+
+            <NumberPicker
+                android:id="@+id/pin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" />
+
+            <NumberPicker
+                android:id="@+id/pin6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/check_pin_button"
+            style="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jsondisplay="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="wrap_content" >
+
+    <item
+        android:id="@+id/action_refresh_posts"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="@string/action_refresh_posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:actionLayout="@layout/abc_list_menu_item_icon"
+
+        jsondisplay:showAsAction="ifRoom" />
+
+</menu>

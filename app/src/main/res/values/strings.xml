@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">JsonDisplay</string>
+    <string name="file_name_secure_prefs">jsondisplay_secure_prefs</string>
+
+    <string name="action_refresh_posts">Refresh Posts</string>
+    <string name="title_post_list">Posts</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_first_use">Select New Pin</string>
+    <string name="prompt_when_pin_set">Enter Pin</string>
+    <string name="prompt_loading">Loading…  Please Wait…</string>
+    <string name="prompt_304_returned">External data source unchanged.</string>
+    <string name="prompt_new_json_data">New Json Data Received\nProcessing…</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_set_pin">Set pin</string>
+    <string name="action_pin_help">Help</string>
+
+    <string name="help_title_valid_pins">Guidance on Choosing a Valid Pin</string>
+    <string name="help_text_valid_pins">
+        Pins must not have more than two consecutive digits the same.\n\n
+        Pins must not have sequences of digits counting up or down.\n\n
+        Do not choose a pin that is easily discoverable - e.g. your date of birth.
+    </string>
+    <string name="error_pin_disallowed">Entry Error</string>
+    <string name="error_incorrect_password">Pin is incorrect</string>
+    <string name="error_repeated_digits">Matching digits found in a group of 3</string>
+    <string name="error_running_digits">Too many digits in natural order</string>
+    <string name="error_reverse_digits">Too many digits in reverse order</string>
+
+    <string name="title_imageView_exit_dialog">Confirm Exit</string>
+    <string name="message_itemView_exit_dialog">This will return you to the Pin entry screen.</string>
+    <string name="prompt_itemView_exit_dialog">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="user_list_first_prompt">Posts by All Users</string>
+    <string name="user_list_other_prompts">"Posts by User:- "</string>
+</resources>
